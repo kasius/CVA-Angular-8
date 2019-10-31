@@ -1,6 +1,20 @@
-# Tutorials
+# CVA-Angular-8
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.0.
+Proyecto Angular 8 - implementando CVA-Formulario anidado-Routing
+
+## Proyecto Implementa
+
+- Anidación de componentes con rutas independientes
+- Formularios Reactivos
+- FormGroup - FormControl
+- Control Value Accessor
+
+## Se obtiene
+
+- Manejo de Formulario anidado con N niveles, datos y estados de formularios de cada componente
+- JSON de Árbol completo de los componentes que forman parte del formulario padre y que están habilitados con CVA.
+
+
 
 ## Development server
 

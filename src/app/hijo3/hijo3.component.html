@@ -1,0 +1,21 @@
+<div *ngIf="formHijo3" class="row">
+  <div [formGroup]="formHijo3" class="col-12">
+    <div class="row">
+      <div class="col-2">
+        <label for="name">Name hijo 3</label>
+      </div>
+      <div class="col-10">
+        <input type="text" id="name" name="name" formControlName="name">
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <ul class="nav nav-tabs">
+      <li style="margin-right: 5px;" class="active"><a [routerLink]="['/cva/hijo-3/nieto-1']">Nieto 1</a></li>
+      <li style="margin-right: 5px;"><a [routerLink]="['/cva/hijo-3/nieto-1']">Nieto 2</a></li>
+    </ul>
+    <div [formGroup]="formHijo3">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

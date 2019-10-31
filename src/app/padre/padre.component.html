@@ -1,0 +1,43 @@
+<div class="container">
+  <div *ngIf="formFather" class="row">
+    <div [formGroup]="formFather" class="col-12">
+      <div class="row">
+        <div class="col-12">
+          <h1>Formulario Angular anidado N niveles Control Value Accessor</h1>
+        </div>
+        <div class="col-2">
+          <label for="name">Name</label>
+        </div>
+        <div class="col-10">
+          <input type="text" id="name" name="name" formControlName="name">
+        </div>
+        <div class="col-2">
+          <label for="lastName">Last Name</label>
+        </div>
+        <div class="col-10">
+          <input type="text" id="lastName" name="lastName" formControlName="lastName">
+        </div>
+        <div class="col-2">
+          <label for="nickName">NickName</label>
+        </div>
+        <div class="col-10">
+          <input type="text" id="nickName" name="nickName" formControlName="nickName">
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <ul class="nav nav-tabs">
+        <li style="margin-right: 5px;" class="active"><a [routerLink]="['/cva/hijo-1']">Hijo 1</a></li>
+        <li style="margin-right: 5px;"><a [routerLink]="['/cva/hijo-2']">Hijo 2</a></li>
+        <li style="margin-right: 5px;"><a [routerLink]="['/cva/hijo-3']">Hijo 3</a></li>
+      </ul>
+      <div [formGroup]="formFather">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+    <div class="col-12">
+      <h3>JSON generado:</h3>
+      {{formFather.value | json}}
+    </div>
+  </div>
+</div>
